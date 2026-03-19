@@ -56,6 +56,7 @@
     --serif: 'DM Serif Display', Georgia, serif;
     --sans: 'Syne', sans-serif;
     --mono: 'DM Mono', monospace;
+    --px: clamp(1.5rem, 8vw, 16rem);
   }
 
   html { scroll-behavior: smooth; }
@@ -173,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 5rem 16rem 5rem;
+    padding: 5rem var(--px) 5rem;
     position: relative;
     overflow: hidden;
   }
@@ -312,7 +313,7 @@
 
   /* SECTION BASE */
   section {
-    padding: 6rem 2.5rem;
+    padding: 6rem var(--px);
   }
 
   .section-label {
